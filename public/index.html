@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- all HTML elements have an on-click attribute, so using buttons isnt always necessary to add functionality upon clicking said element, Devan used divs instead of buttons for the subreddits in the navbar-->
+    <header>
+    <div class="sr-flex-container">
+        <div class="sr-navbar">
+            <div class="dropdown">
+                <button class="sr-bttns dropdown-bttn">MY SUBREDDITS˯</button>
+                <div class="dropdown-content">
+                    <a href="#">edit subscriptions</a>
+                </div>
+            </div>
+            <div>
+                <button class="sr-bttns" onclick="">POPULAR</button>
+                <span>-</span>
+                <button class="sr-bttns" onclick="displayAllPosts()">ALL</button>
+                <span>-</span>
+                <button class="sr-bttns" onclick="">RANDOM</button>
+                <span>-</span>
+                <button class="sr-bttns" onclick="displayUsers()">USERS</button>
+                <span>-</span>
+                <button class="sr-bttns" onclick="">ASKREDDIT</button>
+                <span>&nbsp;|&nbsp;</span>
+                <button class="sr-bttns" onclick="goToSubreddit('news')">NEWS</button>
+                <span>-</span>
+                <button class="sr-bttns" onclick="goToSubreddit('gaming')">GAMING</button>
+                <span>-</span>
+                <button class="sr-bttns" onclick="goToSubreddit('music')">MUSIC</button>
+                <span>-</span>
+                <button class="sr-bttns" onclick="goToSubreddit('weather')">WEATHER</button>
+                <span>-</span>
+                <button class="sr-bttns" onclick="goToSubreddit('movies')">MOVIES</button>
+                <span>-</span>
+                <button class="sr-bttns" onclick="goToSubreddit('oddlysatisfying')">ODDLYSATISFYING</button>
+                <span>-</span>
+                <button class="sr-bttns" onclick="">MORE >></button>
+            </div>
+        </div>
+        </div>
+        <div class="header-bttm">
+            <img class="reddit-bot" src="assets/reddit-bot.png" alt="reddit robot">
+            <h2>reddit</h2>
+        </div>
+    </header>
+
+    <div id="post-container"></div>
+
+    <!-- map out what a post will look like - even though we need to create multiple post iteratively, this makes it easier to visual and recreate and js -->
+    <!-- <div class="post-container">
+    <div class="upvote-container">
+        <button class="upvote-bttn">⬆️</button>
+        <p class="upvotes">200</p>
+        <button class="downvote-bttn">⬇️</button>
+    </div>
+    <img class="post-image" src="https://townsquare.media/site/442/files/2016/10/The-Cat-in-the-Hat.jpg?w=980&q=75">
+    <div class="post-info">
+        <h4 class="post-title">Title</h3>
+        <div class="post-details">
+            <p class="post-author">author</p>
+            <p class="post-subreddit">subreddit</p>
+        </div>
+    </div>
+</div> -->
+
+<div id="users-container"></div>
+
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

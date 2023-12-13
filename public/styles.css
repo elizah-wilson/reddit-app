@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(251, 245, 245);
+    margin: 0;
+}
+
+.sr-flex-container {
+    display: flex;
+    background-color: rgb(222, 220, 220);
+    border-bottom: 1px gray solid;
+    padding-left: 5px;
+    flex-wrap: nowrap;
+}
+
+.sr-navbar {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    color: rgb(43, 42, 42);
+    gap: 5px;
+    font-size: 10px;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+  }
+
+.dropdown:hover
+.dropdown-content {
+    display: block;
+  }
+
+.header-bttm {
+    display: flex;
+    background-color: #cee3f8;
+    border-bottom: 1px solid cadetblue;
+    height: 60px;
+}
+
+.reddit-bot {
+    width: 35px;
+    height: 55px;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 10px;
+}
+
+.upvote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sr-bttns,
+.upvote-bttn,
+.downvote-bttn { 
+    padding: 10;
+    margin: 10;
+    border: none;
+    background-color: transparent;
+}
+
+.sr-bttns:hover {
+    text-decoration: underline;
+}
+
+.upvotes {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.post-image {
+    height: 60px;
+    width: 60px;
+}
+
+.post-title {
+    margin: 0px;
+}
+
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-details {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.user-card {
+    margin: 15px 10px 15px 100px;
+}
+
+.bio-card {
+    width: 780px;
+    border: solid 1px rgb(191, 190, 190);
+    background-color: rgb(240, 236, 236);
+    padding: 2px;
+    margin-top: 5px;
+}
